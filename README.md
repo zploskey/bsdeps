@@ -4,7 +4,8 @@ Test of bsb building a dependency that re-exports a module from an indirect depe
 Pkga depends on Pkgb which depends on Pkgc.
 Pkgb re-exports the Pkgc module as C.
 Pkga calls Pkgb.C.hello.
-Assuming bs-platform is installed globally, you can run the following commands:
+
+Commands to reproduce:
 
 ```sh
 git clone https://github.com/zploskey/bsdeps.git
