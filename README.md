@@ -2,11 +2,16 @@ Test of bsb building a dependency that re-exports a module from an indirect depe
 Pkga depends on Pkgb which depends on Pkgc.
 Pkgb re-exports the Pkgc module as C.
 Pkga calls Pkgb.C.hello.
+Assuming bs-platform is installed globally, you can run the following commands:
 
 ```sh
-cd pkgb
+cd pkgc
+npm link bs-platform
+cd ../pkgb
+npm link bs-platform
 npm install
 cd ../pkga
+npm link bs-platform
 npm install
 npm run build
 ```
