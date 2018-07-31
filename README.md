@@ -1,3 +1,5 @@
+[Bucklescript issue #2972](https://github.com/BuckleScript/bucklescript/issues/2972)
+
 Test of bsb building a dependency that re-exports a module from an indirect dependency.
 Pkga depends on Pkgb which depends on Pkgc.
 Pkgb re-exports the Pkgc module as C.
