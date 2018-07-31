@@ -6,6 +6,7 @@ Assuming bs-platform is installed globally, you can run the following commands:
 
 ```sh
 git clone https://github.com/zploskey/bsdeps.git
+cd bsdeps
 npm install -g bs-platform@4.0.2
 cd pkgc
 npm link bs-platform
